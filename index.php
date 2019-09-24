@@ -25,10 +25,16 @@
     //$aluno->insert();
     //echo $aluno;
 
-    //Altera um usuário já existente
+    //Altera um usuário
+    //$usuario = new Usuario();
+    //$usuario->loadById(6);
+    //$usuario->update("Professor", "professor123");
+    //echo $usuario;
+
+    //Delete um usuário
     $usuario = new Usuario();
     $usuario->loadById(6);
-    $usuario->update("Professor", "professor123");
+    $usuario->delete();
     echo $usuario;
 
 ?>
